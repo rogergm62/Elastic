@@ -9,6 +9,8 @@
 #sudo dpkg -i logstash-8.0.0-amd64.deb
 #wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.0.0-amd64.deb
 #sudo dpkg -i filebeat-8.0.0-amd64.deb
+#wget https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-8.0.0-amd64.deb
+#sudo dpkg -i metricbeat-8.0.0-amd64.deb
 
 cat << EOF
  Execute the next command and replace this settings with false 
