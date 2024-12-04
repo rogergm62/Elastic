@@ -21,8 +21,11 @@ EOF
 
 read -p "Enter when ready" my_var
 
+echo "re-loading daemon"
 sudo systemctl daemon-reload
+echo "enabling elasticsearch"
 sudo systemctl enable elasticsearch
 sudo systemctl start elasticsearch
+echo "enabling kibana"
 sudo systemctl enable kibana
 sudo systemctl start kibana
