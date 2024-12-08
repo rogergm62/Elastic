@@ -11,6 +11,11 @@
 #sudo dpkg -i filebeat-8.0.0-amd64.deb
 #wget https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-8.0.0-amd64.deb
 #sudo dpkg -i metricbeat-8.0.0-amd64.deb
+#wget https://artifacts.elastic.co/downloads/beats/packetbeat/packetbeat-8.0.0-amd64.deb
+#sudo dpkg -i packetbeat-8.0.0-amd64.deb
+
+#Setting up agent (example packetbeat)
+#packetbeat setup -E "setup.kibana.host=localhost:5601" -E "output.elasticsearch.host=['localhost:9200']"
 
 cat << EOF
  Execute the next command and replace this settings with false 
