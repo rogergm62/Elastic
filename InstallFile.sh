@@ -7,6 +7,7 @@
 #sudo dpkg -i kibana-8.0.0-amd64.deb
 #wget https://artifacts.elastic.co/downloads/logstash/logstash-8.0.0-amd64.deb
 #sudo dpkg -i logstash-8.0.0-amd64.deb
+
 #wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.0.0-amd64.deb
 #sudo dpkg -i filebeat-8.0.0-amd64.deb
 #wget https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-8.0.0-amd64.deb
@@ -36,3 +37,8 @@ sudo systemctl start elasticsearch
 echo "enabling kibana"
 sudo systemctl enable kibana
 sudo systemctl start kibana
+#echo "enabling packetbeat"
+#sudo systemctl enable packetbeat
+#sudo systemctl start packetbeat
+#echo "starting suricata"
+#sudo systemctl start suricata
